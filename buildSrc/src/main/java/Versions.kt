@@ -89,6 +89,7 @@ object Versions {
         const val JUNIT = "4.13.1"
         const val KAKAO = "2.4.0"
         const val KOIN = Koin.KOIN
+        const val KOTEST = "4.3.2"
         const val MOCKITO_KOTLIN = "2.2.0"
         const val MOCKK = "1.10.5"
         const val MOCK_WEB_SERVER = "4.9.0"
