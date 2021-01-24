@@ -207,7 +207,7 @@ The data for any other day, from the last one in the local database until the cu
   <img src="./art/unit_tests_pyramid.png" height="200"/>
 </p>
 
-### Unit Tests (341 ✅)
+### Unit Tests (404 ✅)
 
 - ViewModels: 45 ✅
   - CountryViewModel: 26 ✔️
@@ -234,6 +234,11 @@ The data for any other day, from the last one in the local database until the cu
   - UIMapper: 22 ✔️
   - EntityMapper: 8 ✔️
   - PojoMapper: 3 ✔️
+- Mappers (Kotest): 63 ✅
+  - DomainMapper-Kotest: 30 ✔️
+  - UIMapper-Kotest: 22 ✔️
+  - EntityMapper-Kotest: 8 ✔️
+  - PojoMapper-Kotest: 3 ✔️
 - Extensions: 9 ✅
   - NumberExtension: 6 ✔️
   - DateExtension: 3 ✔️
