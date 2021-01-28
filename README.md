@@ -207,12 +207,14 @@ The data for any other day, from the last one in the local database until the cu
   <img src="./art/unit_tests_pyramid.png" height="200"/>
 </p>
 
-### Unit Tests (404 ✅)
+### Unit Tests (426 ✅)
 
 - ViewModels: 45 ✅
   - CountryViewModel: 26 ✔️
   - WorldViewModel: 13 ✔️
   - MainViewModel: 6 ✔️
+- ViewModels (Kotest): 13 ✅
+  - WorldViewModel-Kotest: 13 ✔️  
 - UseCases: 93 ✅
   - GetRegionStats: 24 ✔️
   - GetCountryStats: 20 ✔️
@@ -242,6 +244,9 @@ The data for any other day, from the last one in the local database until the cu
 - Extensions: 9 ✅
   - NumberExtension: 6 ✔️
   - DateExtension: 3 ✔️
+- Extensions (Kotest): 9 ✅
+  - NumberExtension-Kotest: 6 ✔️
+  - DateExtension-Kotest: 3 ✔️  
   
 <p align="left">
   <img src="./art/integration_tests_pyramid.png" height="200"/>
