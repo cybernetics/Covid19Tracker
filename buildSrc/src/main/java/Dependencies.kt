@@ -107,8 +107,11 @@ object Dependencies {
     internal const val TEST_JUNIT = "junit:junit:${Versions.Test.JUNIT}"
     internal const val TEST_KAKAO = "com.agoda.kakao:kakao:${Versions.Test.KAKAO}"
     internal const val TEST_KOIN = "org.koin:koin-test:${Versions.Test.KOIN}"
+    internal const val TEST_KOTEST_ASSERTIONS = "" +
+            "io.kotest:kotest-assertions-core:${Versions.Test.KOTEST}"
+    internal const val TEST_KOTEST_MOCK_WEB_SERVER =
+        "io.kotest:kotest-extensions-mockserver:${Versions.Test.KOTEST}"
     internal const val TEST_KOTEST_RUNNER = "io.kotest:kotest-runner-junit5:${Versions.Test.KOTEST}"
-    internal const val TEST_KOTEST_ASSERTIONS = "io.kotest:kotest-assertions-core:${Versions.Test.KOTEST}"
     internal const val TEST_MOCKITO_KOTLIN =
         "com.nhaarman.mockitokotlin2:mockito-kotlin:${Versions.Test.MOCKITO_KOTLIN}"
     internal const val TEST_MOCKK = "io.mockk:mockk:${Versions.Test.MOCKK}"
@@ -228,6 +231,7 @@ fun DependencyHandler.test() {
     testImplementation(Dependencies.TEST_JUNIT)
     testImplementation(Dependencies.TEST_KOIN)
     testImplementation(Dependencies.TEST_KOTEST_ASSERTIONS)
+    testImplementation(Dependencies.TEST_KOTEST_MOCK_WEB_SERVER)
     testImplementation(Dependencies.TEST_KOTEST_RUNNER)
     testImplementation(Dependencies.TEST_MOCKITO_KOTLIN)
     testImplementation(Dependencies.TEST_MOCKK)
