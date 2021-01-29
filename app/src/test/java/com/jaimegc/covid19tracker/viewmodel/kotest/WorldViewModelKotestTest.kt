@@ -34,13 +34,10 @@ import com.jaimegc.covid19tracker.ScreenStateFactoryTest.stateScreenSuccessListC
 import com.jaimegc.covid19tracker.ScreenStateFactoryTest.stateScreenSuccessListCountryAndStatsLineChartMostOpenCasesData
 import com.jaimegc.covid19tracker.ScreenStateFactoryTest.stateScreenSuccessListCountryAndStatsLineChartMostRecoveredData
 import com.jaimegc.covid19tracker.ScreenStateFactoryTest.stateScreenSuccessListWorldStatsPieChartData
-import com.jaimegc.covid19tracker.util.kotest.ProjectConfig
-import com.nhaarman.mockitokotlin2.KArgumentCaptor
 import com.nhaarman.mockitokotlin2.argumentCaptor
 import com.nhaarman.mockitokotlin2.mock
 import com.nhaarman.mockitokotlin2.verify
 import com.nhaarman.mockitokotlin2.whenever
-import io.kotest.core.spec.IsolationMode
 import io.kotest.core.spec.style.FunSpec
 import io.kotest.matchers.nulls.shouldNotBeNull
 import io.kotest.matchers.shouldBe
@@ -106,7 +103,7 @@ class WorldViewModelKotestTest : FunSpec({
 
         worldViewModel.screenState.getOrAwaitValue {
             val loading = worldViewModel.screenState.value
-            ProjectConfig.testDispatcher.advanceUntilIdle()
+            //ProjectConfig.testDispatcher.advanceUntilIdle()
             val success = worldViewModel.screenState.value
 
             ScreenState.Loading shouldBe loading
@@ -123,7 +120,7 @@ class WorldViewModelKotestTest : FunSpec({
 
         worldViewModel.screenState.observeForTesting {
             val loading = worldViewModel.screenState.value
-            ProjectConfig.testDispatcher.advanceUntilIdle()
+            //ProjectConfig.testDispatcher.advanceUntilIdle()
             val success = worldViewModel.screenState.value
 
             ScreenState.Loading shouldBe loading
