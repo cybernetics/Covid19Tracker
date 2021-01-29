@@ -7,6 +7,7 @@ plugins {
     // id("com.google.gms.google-services")
     id("com.google.firebase.crashlytics")
     id("com.google.firebase.firebase-perf")
+    id("io.kotest") version "0.2.6"
 }
 
 android {
@@ -69,6 +70,10 @@ android {
         }
         animationsDisabled = true
     }
+}
+
+tasks.withType<Test> {
+    useJUnitPlatform()
 }
 
 dependencies {
